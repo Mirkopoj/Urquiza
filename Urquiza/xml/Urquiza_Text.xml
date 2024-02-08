@@ -7,47 +7,47 @@
 		</Row>
 
 		<!-- Leader specific pedia text. -->
-		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MRK_URQUIZAS_CHAPTER_CAPSULE_BODY" Language="en_US">
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MRK_URQUIZA_CHAPTER_CAPSULE_BODY" Language="en_US">
 			<Text>Jasper kitty is a charismatic and typically friendly feline.  He prefers diplomatic trades that involve food.</Text>
 		</Row>
-		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MRK_URQUIZAS_CHAPTER_DETAILED_BODY" Language="en_US">
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MRK_URQUIZA_CHAPTER_DETAILED_BODY" Language="en_US">
 			<Text>Jasper kitty likes to hide in his fort and attack when others least expect it.  He is particularly skilled at tripping people.</Text>
 		</Row>
 		
 		<!-- Leader specific historical text. -->
-		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MRK_URQUIZAS_CHAPTER_HISTORY_PARA_1" Language="en_US">
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MRK_URQUIZA_CHAPTER_HISTORY_PARA_1" Language="en_US">
 			<Text>Born in 2010, Jasper kitty grew to power at a young age...</Text>
 		</Row>
 
 		<!-- Leader Quotes -->
-		<Row Tag="LOC_LEADER_MRK_URQUIZAS_QUOTE" Language="en_US">
+		<Row Tag="LOC_LEADER_MRK_URQUIZA_QUOTE" Language="en_US">
 			<Text>Meow.</Text>
 		</Row>
 
 		<!-- Leader Traits -->
-		<Row Tag="LOC_ABILITY_MRK_URQUIZAS_UNITS_BARBS_NAME" Language="en_US">
+		<Row Tag="LOC_ABILITY_MRK_URQUIZA_UNITS_BARBS_NAME" Language="en_US">
 			<Text> Civilización y Barbarie</Text>
 		</Row>
-		<Row Tag="LOC_ABILITY_MRK_URQUIZAS_UNITS_BARBS_DESCRIPTION" Language="en_US">
+		<Row Tag="LOC_ABILITY_MRK_URQUIZA_UNITS_BARBS_DESCRIPTION" Language="en_US">
 			<Text>+5 [ICON_Strength] Combat Strength against barbarians </Text>
 		</Row>
-		<Row Tag="LOC_ABILITY_MRK_URQUIZAS_UNITS_SCIEN_DESCRIPTION" Language="en_US">
+		<Row Tag="LOC_ABILITY_MRK_URQUIZA_UNITS_SCIEN_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_Strength] Combat Strength for every Tech or Civic you are ahead, and for every 10 [ICON_Science] or [ICON_Culture] you produce over your oponent. (If you are behind it takes [ICON_Strength] Combat Strength away)</Text>
 		</Row>
-		<Row Tag="LOC_MRK_URQUIZAS_STRENGTH_PER_CIENCE" Language="en_US">
+		<Row Tag="LOC_MRK_URQUIZA_STRENGTH_PER_CIENCE" Language="en_US">
 			<Text> [ICON_Strength] from Civilización y Barbarie</Text>
 		</Row>
     
 		<!-- Leader Dialog -->
-		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_MRK_URQUIZAS_ANY" Language="en_US">
+		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_MRK_URQUIZA_ANY" Language="en_US">
 		  <Text>Mrow! I am the mighty Jasper Kitty.  Pet me.</Text>
 		</Row>
 
-		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_MRK_URQUIZAS_ANY" Language="en_US">
+		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_MRK_URQUIZA_ANY" Language="en_US">
 		  <Text>I haz a box.  Wanna see?</Text>
 		</Row>
 
-		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_MRK_URQUIZAS_ANY" Language="en_US">
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_MRK_URQUIZA_ANY" Language="en_US">
 		  <Text>Let me rub my face on all of your stuff so that it will be mine.</Text>
 		</Row>
 	</LocalizedText>

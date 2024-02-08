@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>	
+		<Row Tag="LOC_LEADER_MRK_URQUIZA_NAME" Language="en_US">
+			<Text>Justo Jose Urquiza</Text>
+		</Row>
+		
+		<Row Tag="LOC_TRAIT_LEADER_MRK_URQUIZA_NAME" Language="en_US">
+			<Text>Civilización y Barbarie</Text>
+		</Row>
+		
+		<Row Tag="LOC_TRAIT_LEADER_MRK_URQUIZA_DESCRIPTION" Language="en_US">
+			<Text>Combat victories generate [ICON_Science] science equal to the defeted unit's [ICON_Strength] combat strength. +1[ICON_Strength] Combat Strength against major civilizations for every technology or civic you are ahead of your most advanced oponent, +1[ICON_Strength] Combat Strength for every 10[ICON_Science] or [ICON_Culture] you are ahead of them. Goes up to +8[ICON_Strength] Combat Strength, can give negative [ICON_Strength] Combat Strength if you are behind. +5[ICON_Strength] Combat Strength agains barbarians. International [ICON_TradeRoute] Trade routes to URQUIZAS give +2[ICON_Gold] to the sender, +1[ICON_Science] and +1[Icon_Culture] get added with the discovery of Scientific Theory</Text>
+		</Row>
+
+	</LocalizedText>
+</GameData>

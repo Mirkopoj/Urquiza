@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<IconTextureAtlases>
+		<Row Name="ICON_ATLAS_MRK_URQUIZA"		IconSize="32"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_URQUIZA_32"/>
+		<Row Name="ICON_ATLAS_MRK_URQUIZA"		IconSize="45"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_URQUIZA_45"/>
+		<Row Name="ICON_ATLAS_MRK_URQUIZA"		IconSize="48"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_URQUIZA_48"/>
+		<Row Name="ICON_ATLAS_MRK_URQUIZA"		IconSize="50"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_URQUIZA_50"/>
+		<Row Name="ICON_ATLAS_MRK_URQUIZA"		IconSize="55"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_URQUIZA_55"/>
+		<Row Name="ICON_ATLAS_MRK_URQUIZA"		IconSize="64"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_URQUIZA_64"/>
+		<Row Name="ICON_ATLAS_MRK_URQUIZA"		IconSize="80"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_URQUIZA_80"/>
+		<Row Name="ICON_ATLAS_MRK_URQUIZA"		IconSize="256"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_URQUIZA_256"/>
+		<Row Name="ICON_ATLAS_MRK_URQUIZA_CIV"	IconSize="45"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_URQUIZA_Civ_45"/>
+		<Row Name="ICON_ATLAS_MRK_URQUIZA_CIV"	IconSize="256"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_URQUIZA_Civ_256"/>
+	</IconTextureAtlases>
+	<IconDefinitions>
+		<Row Name="ICON_LEADER_MRK_URQUIZA"			Atlas="ICON_ATLAS_MRK_URQUIZA"		Index="0"/>
+		<Row Name="ICON_LEADER_MRK_URQUIZA_CIV"		Atlas="ICON_ATLAS_MRK_URQUIZA_CIV"	Index="0"/>
+	</IconDefinitions>
+	
+</GameData>

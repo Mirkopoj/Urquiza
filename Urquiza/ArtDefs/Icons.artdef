@@ -41,14 +41,14 @@
 								</m_Values>
 							</m_Fields>
 							<m_ChildCollections/>
-							<m_Name text="Sarmiento_for_Leugis_Argentina_Untitled88DB1D589F6FFBDC_IconData"/>
+							<m_Name text="Urquiza for Leugi's Argentina_Untitled88DB1D589F6FFBDC_IconData"/>
 							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 						</Element>
 						<Element>
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="Icon_MRK_URQUIZA_Civ_45"/>
+										<m_EntryName text="Icon_MRK_URQUIZA_Civ_256"/>
 										<m_XLPClass text="UITexture"/>
 										<m_XLPPath text="uiicons.xlp"/>
 										<m_BLPPackage text="UIIcons"/>
@@ -71,7 +71,7 @@
 						</Element>
 					</Element>
 				</m_ChildCollections>
-				<m_Name text="Sarmiento_for_Leugis_Argentina_Untitled88DB1D589F6FFBDC_Icons"/>
+				<m_Name text="Urquiza for Leugi's Argentina_Untitled88DB1D589F6FFBDC_IconData"/>
 				<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 			</Element>
 		</Element>

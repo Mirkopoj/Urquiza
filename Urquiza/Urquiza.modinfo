@@ -3,7 +3,8 @@
   <Properties>
     <Name>Urquiza for Leugi's Argentina</Name>
     <Description>This example mod demonstrates how to add a new leader and civilization to the game.</Description>
-    <Created>1707431515</Created>
+    <CustomProperties></CustomProperties>
+    <Created>1707623768</Created>
     <Teaser>This example mod demonstrates how to add a new leader and civilization to the game.</Teaser>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
   </Properties>

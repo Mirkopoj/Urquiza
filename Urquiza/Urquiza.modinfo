@@ -14,37 +14,33 @@
     </Criteria>
   </ActionCriteria>
   <FrontEndActions>
-    <UpdateDatabase id="Config">
+    <UpdateDatabase id="Urquiza_Config_FE_MRK">
       <File>xml/Urquiza_Config.xml</File>
     </UpdateDatabase>
-    <UpdateText id="ConfigText">
+    <UpdateText id="Urquiza_ConfigText_FE_MRK">
       <File>xml/Urquiza_ConfigText.xml</File>
     </UpdateText>
-    <UpdateIcons id="ConfigIcons">
+    <UpdateIcons id="Urquiza_ConfigIcons_FE_MRK">
       <File>xml/Urquiza_Icons.xml</File>
     </UpdateIcons>
-    <UpdateArt id="ConfigArt">
+    <UpdateArt id="Urquiza_ConfigArt_FE_MRK">
       <File>Urquiza.dep</File>
     </UpdateArt>
   </FrontEndActions>
   <InGameActions>
-    <UpdateDatabase id="Gameplay">
-      <Criteria>LeaderCriteria</Criteria>
+    <UpdateDatabase id="Urquiza_y_Biblio_MRK">
       <File>sql/Leader_Urquiza.sql</File>
       <File>sql/Trait_Urquiza.sql</File>
-      <File>sql/Units_Urquiza.sql</File>
+      <File>sql/District_Urquiza.sql</File>
     </UpdateDatabase>
-    <UpdateText id="Text">
-      <Criteria>LeaderCriteria</Criteria>
+    <UpdateText id="Urquiza_Text_MRK">
       <File>xml/Urquiza_ConfigText.xml</File>
       <File>xml/Urquiza_Text.xml</File>
     </UpdateText>
-    <UpdateIcons id="Icons">
-      <Criteria>LeaderCriteria</Criteria>
+    <UpdateIcons id="Urquiza_Icons_MRK">
       <File>xml/Urquiza_Icons.xml</File>
     </UpdateIcons>
-    <UpdateArt id="Art">
-      <Criteria>LeaderCriteria</Criteria>
+    <UpdateArt id="Urquiza_Art_MRK">
       <File>Urquiza.dep</File>
     </UpdateArt>
   </InGameActions>
@@ -60,7 +56,7 @@
     <File>Platforms/Windows/BLPs/UILeaders.blp</File>
     <File>sql/Leader_Urquiza.sql</File>
     <File>sql/Trait_Urquiza.sql</File>
-    <File>sql/Units_Urquiza.sql</File>
+    <File>sql/District_Urquiza.sql</File>
     <File>Textures/FALLBACK_NEUTRAL_MRK_URQUIZA.dds</File>
     <File>Textures/FALLBACK_NEUTRAL_MRK_URQUIZA.tex</File>
     <File>Textures/Icon_MRK_URQUIZA_256.dds</File>

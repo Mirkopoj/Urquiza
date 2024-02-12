@@ -10,7 +10,7 @@
 		</Row>
 		
 		<Row Tag="LOC_TRAIT_LEADER_MRK_URQUIZA_DESCRIPTION" Language="en_US">
-			<Text>Cosas Piolas</Text>
+		<Text>Military units exert loyalty preassure equal to 1[ICON_Citizen] Citizen. Converting a city through loyalty grants +100[ICON_FAVOR] diplomatic favour (+200[ICON_FAVOR] if the converted city has a harbour). Harbour districts and buildings give double the [ICON_Gold] gold and [ICON_TradeRoute] trade route capacity, but get a -5 loyalty penalty. Has access to a unique Governer, Juan Bautista Alberdi, el padre de la constitución.</Text>
 		</Row>
 
 	</LocalizedText>

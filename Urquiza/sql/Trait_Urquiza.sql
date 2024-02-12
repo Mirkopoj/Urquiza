@@ -4,47 +4,91 @@
 -- LeaderTraits
 -------------------------------------	
 INSERT INTO LeaderTraits	
-		(LeaderType,			TraitType)
-VALUES	('LEADER_MRK_URQUIZA','TRAIT_LEADER_MRK_URQUIZA');
+			(LeaderType,				TraitType)
+VALUES	('LEADER_MRK_URQUIZA',	'TRAIT_LEADER_MRK_URQUIZA');
 
 -------------------------------------
 -- Types
 -------------------------------------	
 INSERT INTO Types	
-		(Type,							Kind)
+			(Type,								Kind)
 VALUES	('TRAIT_LEADER_MRK_URQUIZA',	'KIND_TRAIT');
 -------------------------------------			
 -- Traits			
 -------------------------------------				
 INSERT INTO Traits				
-		(TraitType,						Name,									Description)
+			(TraitType,							Name,												Description)
 VALUES	('TRAIT_LEADER_MRK_URQUIZA',	'LOC_TRAIT_LEADER_MRK_URQUIZA_NAME',	'LOC_TRAIT_LEADER_MRK_URQUIZA_DESCRIPTION');
 
 -------------------------------------		
 -- TraitModifiers		
 -------------------------------------			
 INSERT INTO TraitModifiers
-		(TraitType,						ModifierId)
-VALUES	('TRAIT_LEADER_MRK_URQUIZA',	'MRK_URQUIZA_UNITS'),
-		('TRAIT_LEADER_MRK_URQUIZA',	'MRK_URQUIZA_CIENCE_PER_KILL'),
-		('TRAIT_LEADER_MRK_URQUIZA',	'MRK_URQUIZA_TRADE_ROUTE');
+			(TraitType,							ModifierId)
+VALUES	('TRAIT_LEADER_MRK_URQUIZA',	'MRK_URQUIZA_HARBOUR_LOYALTY');
+
+-------------------------------------		
+-- BuildingModifiers		
+-------------------------------------			
+INSERT INTO BuildingModifiers
+			(BuildingType,				ModifierId)
+VALUES	('BUILDING_LIGHTHOUSE',	'MRK_URQUIZA_LIGHTHOUSE_TRADE_ROUTE_CAPACITY'),
+			('BUILDING_LIGHTHOUSE',	'MRK_URQUIZA_LIGHTHOUSE_LOYALTY'),
+			('BUILDING_SHIPYARD',	'MRK_URQUIZA_SHIPYARD_TRADE_ROUTE_CAPACITY'),
+			('BUILDING_SHIPYARD',	'MRK_URQUIZA_SHIPYARD_LOYALTY'),
+			('BUILDING_SEAPORT',		'MRK_URQUIZA_SEAPORT_TRADE_ROUTE_CAPACITY'),
+			('BUILDING_SEAPORT',		'MRK_URQUIZA_SEAPORT_LOYALTY');
 
 -------------------------------------
 -- Modifiers
 -------------------------------------
 INSERT INTO Modifiers	
-		(ModifierId,							ModifierType,													RunOnce,	Permanent,	OwnerRequirementSetId,	SubjectRequirementSetId)
-VALUES	('MRK_URQUIZA_UNITS',					'MODIFIER_PLAYER_UNITS_GRANT_ABILITY',							0,			1,			null,					null),
-		('MRK_URQUIZA_CIENCE_PER_KILL',		'MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD',				0,			0,			null,					null),
-		('MRK_URQUIZA_TRADE_ROUTE',			'MODIFIER_PLAYER_CITIES_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS',	0,			0,			null,					null);
+			(ModifierId,												ModifierType,															RunOnce,	Permanent,	OwnerRequirementSetId,	SubjectRequirementSetId)
+VALUES	('MRK_URQUIZA_HARBOUR_LOYALTY',						'MODIFIER_PLAYER_CITIES_ADJUST_IDENTITY_PER_TURN',			0,			0,				null,							'REQUIREMENT_CITY_HAS_MRK_URQUIZA_HARBOR'),
+			('MRK_URQUIZA_LIGHTHOUSE_TRADE_ROUTE_CAPACITY',	'MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY',				0,			0,				null,							'REQUIREMENT_CITY_HAS_MRK_URQUIZA_HARBOR'),
+			('MRK_URQUIZA_LIGHTHOUSE_LOYALTY',					'MODIFIER_SINGLE_CITY_ADJUST_IDENTITY_PER_TURN',			0,			0,				null,							'REQUIREMENT_CITY_HAS_MRK_URQUIZA_HARBOR'),
+			('MRK_URQUIZA_SHIPYARD_TRADE_ROUTE_CAPACITY',	'MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY',				0,			0,				null,							'REQUIREMENT_CITY_HAS_MRK_URQUIZA_HARBOR'),
+			('MRK_URQUIZA_SHIPYARD_LOYALTY',						'MODIFIER_SINGLE_CITY_ADJUST_IDENTITY_PER_TURN',			0,			0,				null,							'REQUIREMENT_CITY_HAS_MRK_URQUIZA_HARBOR'),
+			('MRK_URQUIZA_SEAPORT_TRADE_ROUTE_CAPACITY', 	'MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY',				0,			0,				null,							'REQUIREMENT_CITY_HAS_MRK_URQUIZA_HARBOR'),
+			('MRK_URQUIZA_SEAPORT_LOYALTY',						'MODIFIER_SINGLE_CITY_ADJUST_IDENTITY_PER_TURN',			0,			0,				null,							'REQUIREMENT_CITY_HAS_MRK_URQUIZA_HARBOR');
 
 -------------------------------------
 -- ModifierArguments
 -------------------------------------
 INSERT INTO ModifierArguments
-		(ModifierId,						Name,						Value)
-VALUES	('MRK_URQUIZA_UNITS',				'AbilityType',				'ABILITY_MRK_URQUIZA_UNITS_BARBS'),
-		('MRK_URQUIZA_CIENCE_PER_KILL',	'YieldType',				'YIELD_SCIENCE'),
-		('MRK_URQUIZA_CIENCE_PER_KILL',	'PercentDefeatedStrength',	100),
-		('MRK_URQUIZA_TRADE_ROUTE',		'YieldType',				'YIELD_GOLD'),
-		('MRK_URQUIZA_TRADE_ROUTE',		'Amount',					2);
+			(ModifierId,												Name,			Value)
+VALUES	('MRK_URQUIZA_HARBOUR_LOYALTY',						'Amount',	-5),
+			('MRK_URQUIZA_LIGHTHOUSE_TRADE_ROUTE_CAPACITY',	'Amount',	1),
+			('MRK_URQUIZA_LIGHTHOUSE_LOYALTY',					'Amount',	-2),
+			('MRK_URQUIZA_SHIPYARD_TRADE_ROUTE_CAPACITY',	'Amount',	3),
+			('MRK_URQUIZA_SHIPYARD_LOYALTY',						'Amount',	-3),
+			('MRK_URQUIZA_SEAPORT_TRADE_ROUTE_CAPACITY',		'Amount',	4),
+			('MRK_URQUIZA_SEAPORT_LOYALTY',						'Amount',	-4);
+
+-------------------------------------
+-- RequirementSets
+-------------------------------------
+INSERT INTO RequirementSets
+			(RequirementSetId,									RequirementSetType)
+VALUES	('REQUIREMENT_CITY_HAS_MRK_URQUIZA_HARBOR',	'REQUIREMENTSET_TEST_ALL');
+
+-------------------------------------
+-- RequirementSetRequirements
+-------------------------------------
+INSERT INTO RequirementSetRequirements
+			(RequirementSetId,									RequirementId)
+VALUES	('REQUIREMENT_CITY_HAS_MRK_URQUIZA_HARBOR',	'REQUIRES_CITY_HAS_MRK_URQUIZA_HARBOR');
+
+-------------------------------------
+-- Requirements
+-------------------------------------
+INSERT INTO Requirements
+			(RequirementId,										RequirementType)
+VALUES	('REQUIRES_CITY_HAS_MRK_URQUIZA_HARBOR',		'REQUIREMENT_CITY_HAS_DISTRICT');
+
+-------------------------------------
+-- RequirementArguments
+-------------------------------------
+INSERT INTO RequirementArguments
+			(RequirementId,									Name,					Value)
+VALUES	('REQUIRES_CITY_HAS_MRK_URQUIZA_HARBOR',	'DistrictType',	'DISTRICT_MRK_URQUIZA_HARBOUR');
